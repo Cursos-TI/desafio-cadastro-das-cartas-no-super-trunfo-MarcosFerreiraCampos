@@ -17,6 +17,42 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+// Definição da estrutura da carta
+typedef struct {
+    char codigo[4]; // Código da carta (ex: A01, B02)
+    int populacao;
+    float area;
+    float pib;
+    int pontos_turisticos;
+} Carta;
 
+    Carta cidade;
+    
+    // Entrada de dados
+    printf("Bem-vindo ao cadastro de cartas do Super Trunfo - Países!\n");
+    
+    printf("Digite o código da carta (ex: A01): ");
+    scanf("%s", cidade.codigo);
+    
+    printf("Digite a população da cidade: ");
+    scanf("%d", &cidade.populacao);
+    
+    printf("Digite a área da cidade (em km²): ");
+    scanf("%f", &cidade.area);
+    
+    printf("Digite o PIB da cidade (em milhões): ");
+    scanf("%f", &cidade.pib);
+    
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%d", &cidade.pontos_turisticos);
+    
+    // Exibição dos dados
+    printf("\nDados da cidade cadastrada:\n");
+    printf("Código: %s\n", cidade.codigo);
+    printf("População: %d habitantes\n", cidade.populacao);
+    printf("Área: %.2f km²\n", cidade.area);
+    printf("PIB: %.2f milhões\n", cidade.pib);
+    printf("Pontos Turísticos: %d\n", cidade.pontos_turisticos);
+    
     return 0;
 }
