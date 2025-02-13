@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main() {  // variaveis
     char estado;
     int cidade;
     int populacao;
